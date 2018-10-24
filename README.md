@@ -51,11 +51,11 @@ const res = new Lemon().findParents(tree, nodeId);
 
 #### 获取树中特定节点对象
 
-```
+```javascript 1.8
 const trees = [
   {
     id: 11,
-	children: [
+    children: [
       { 
       	id: 112,
       	children: {
