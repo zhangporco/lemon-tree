@@ -19,6 +19,12 @@ yarn add lemon-tree
 import Lemon from 'lemon-tree';
 ```
 
+## 功能
+
+- findParents 获取全部父节点 id 数组（包括结点自身）
+- getNodeById 返回树中特定节点对象
+- hasNodeId 判断特定节点是否在树中
+
 ## 使用
 
 #### 基本用法 
@@ -97,3 +103,5 @@ const data = {
 const tree = new Lemon({ id: 'ID', children: 'CHILDREN' });
 const res = tree.findParents(data, 'XXX');
 ```
+
+（如果对使用有疑问，可以参考 **test** 目录下代码）
