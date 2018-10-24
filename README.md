@@ -59,8 +59,8 @@ const trees = [
       { 
       	id: 112,
       	children: {
-      	  id: 113,
-		},
+      	  id: 113
+      	},
 	  },
 	  {
 	  	id: 122,
