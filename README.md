@@ -62,12 +62,6 @@ const trees = [
       	  id: 113
       	},
 	  },
-	  {
-	  	id: 122,
-	  	children: {
-	  	  id: 123,
-		},
-	   },
 	],
   },
   {
