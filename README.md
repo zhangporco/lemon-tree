@@ -53,32 +53,32 @@ const res = new Lemon().findParents(tree, nodeId);
 
 ```javascript 1.8
 const trees = [
-	{
-		id: 11,
-		children: [
-			{
-				id: 112,
-				children: {
-					id: 113,
-				},
-			},
-			{
-				id: 122,
-				children: {
-					id: 123,
-				},
-			},
-		],
-	},
-	{
-		id: 21,
+  {
+    id: 11,
+	children: [
+      { 
+      	id: 112,
 		children: {
-			id: 22,
-			children: {
-				id: 23,
-			},
+      	  id: 113,
 		},
+	  },
+	  {
+	  	id: 122,
+		children: {
+	  	  id: 123,
+		},
+	   },
+	],
+  },
+  {
+	id: 21,
+    children: {
+	  id: 22,
+	  children: {
+	  	id: 23,
+	  },
 	},
+  },
 ];
 const nodeId = 8;
 const res = new Lemon().getNodeById(tree, nodeId);
