@@ -51,7 +51,7 @@ const res = new Lemon().findParents(tree, nodeId);
 
 #### 获取树中特定节点对象
 
-```javascript 1.8
+```
 const trees = [
   {
     id: 11,
@@ -77,8 +77,8 @@ const trees = [
 	  children: {
 	  	id: 23,
 	  },
-	},
-  },
+	}
+  }
 ];
 const nodeId = 8;
 const res = new Lemon().getNodeById(tree, nodeId);
