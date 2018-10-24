@@ -60,18 +60,18 @@ const trees = [
       	id: 112,
       	children: {
       	  id: 113
-      	}
-	  }
-	]
+        } 
+      } 
+    ]
   },
   {
-	id: 21,
-	children: {
-	  id: 22,
-	  children: {
-	  	id: 23
-	  }
-	}
+    id: 21,
+    children: {
+      id: 22,
+      children: {
+        id: 23
+      }
+    }
   }
 ];
 const nodeId = 8;
