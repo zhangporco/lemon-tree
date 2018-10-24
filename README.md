@@ -80,7 +80,7 @@ const trees = [
     }
   }
 ];
-const nodeId = 8;
+const nodeId = 23;
 const res = new Lemon().getNodeById(tree, nodeId);
 ```
 
