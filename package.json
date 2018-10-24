@@ -1,0 +1,10 @@
+{
+  "name": "lemon-tree",
+  "version": "1.0.0",
+  "description": "js tree 树 操作",
+  "main": "index.js",
+  "repository": "https://github.com/zhangporco/lemon-tree.git",
+  "author": "Porco home <zhangporco@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
