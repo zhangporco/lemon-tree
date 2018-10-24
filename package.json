@@ -1,6 +1,6 @@
 {
   "name": "lemon-tree",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "js tree 树 操作",
   "main": "./src/lemon",
   "repository": "https://github.com/zhangporco/lemon-tree.git",

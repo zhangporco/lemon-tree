@@ -58,13 +58,13 @@ const trees = [
 	children: [
       { 
       	id: 112,
-		children: {
+      	children: {
       	  id: 113,
 		},
 	  },
 	  {
 	  	id: 122,
-		children: {
+	  	children: {
 	  	  id: 123,
 		},
 	   },
@@ -72,7 +72,7 @@ const trees = [
   },
   {
 	id: 21,
-    children: {
+	children: {
 	  id: 22,
 	  children: {
 	  	id: 23,
