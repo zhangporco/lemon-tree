@@ -21,9 +21,11 @@ import Lemon from 'lemon-tree';
 
 ## 功能
 
-- findParents 获取全部父节点 id 数组（包括结点自身）
-- getNodeById 返回树中特定节点对象
-- hasNodeId 判断特定节点是否在树中
+- getNodeById(tree, nodeId) 返回树中特定节点对象
+- hasNodeId(tree, nodeId) 判断特定节点是否在树中
+- findParentIds(tree, nodeId) 获取全部父节点 id 数组（包括结点自身）
+- findParents(tree, nodeId) 获取全部父节点 数组（包括结点自身)
+- findTree(tree, nodeId) 获取 nodeId 所在树对象
 
 ## 使用
 
@@ -46,7 +48,7 @@ const tree = {
     },
 };
 const nodeId = 4;
-const res = new Lemon().findParents(tree, nodeId);
+const res = new Lemon().findParentIds(tree, nodeId);
 ```
 
 返回值为：
@@ -101,7 +103,7 @@ const data = {
     },
 };
 const tree = new Lemon({ id: 'ID', children: 'CHILDREN' });
-const res = tree.findParents(data, 'XXX');
+const res = tree.findParentIds(data, 'XXX');
 ```
 
 （如果对使用有疑问，可以参考 **test** 目录下代码）

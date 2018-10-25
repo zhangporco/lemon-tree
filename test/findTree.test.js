@@ -16,13 +16,13 @@ const tree = {
 		},
 	},
 };
-test('tree findParents 1', t => {
+test('tree findTree 1', t => {
 	const nodeId = 2;
-	const res = new Lemon().findParents(tree, nodeId);
-	t.is(res.length, 2);
+	const res = new Lemon().findTree(tree, nodeId);
+	t.is(res.id, 1);
 });
 
-test('tree findParents 1', t => {
+test('tree findTree 1', t => {
 	const trees = [
 		tree,
 		{
@@ -46,6 +46,6 @@ test('tree findParents 1', t => {
 	];
 	
 	const nodeId = 22;
-	const res = new Lemon().findParents(trees, nodeId);
-	t.is(res.length, 2);
+	const res = new Lemon().findTree(trees, nodeId);
+	t.is(res.id, 21);
 });
