@@ -19,7 +19,7 @@ yarn add lemon-tree
 import Lemon from 'lemon-tree';
 ```
 
-## 功能
+## API
 
 - getNodeById(tree, nodeId) 返回树中特定节点对象
 - hasNodeId(tree, nodeId) 判断特定节点是否在树中
