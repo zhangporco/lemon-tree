@@ -26,6 +26,7 @@ import Lemon from 'lemon-tree';
 - findParentIds(tree, nodeId) 获取全部父节点 id 数组（包括结点自身）
 - findParents(tree, nodeId) 获取全部父节点 数组（包括结点自身)
 - findTree(tree, nodeId) 获取 nodeId 所在树对象
+- arrayToTree(array, template) 将数组转化成树形结构返回
 
 ## 使用
 
@@ -104,6 +105,23 @@ const data = {
 };
 const tree = new Lemon({ id: 'ID', children: 'CHILDREN' });
 const res = tree.findParentIds(data, 'XXX');
+```
+
+```javascript 1.8
+const array2 = [
+	{ Id: 1, pid: 0 },
+	{ Id: 2, pid: 1 },
+	{ Id: 3, pid: 1 },
+	{ Id: 4, pid: 3 },
+	{ Id: 5, pid: 4 },
+	{ Id: 6, pid: 0 },
+	{ Id: 7, pid: 6 },
+	{ Id: 8, pid: 7 },
+	{ Id: 9, pid: 8 },
+	{ Id: 10, pid: 0 },
+];
+const template = { id: 'Id', pId: 'pid', children: 'child' };
+const res = new Lemon().arrayToTree(array2, template);
 ```
 
 （如果对使用有疑问，可以参考 **test** 目录下代码）

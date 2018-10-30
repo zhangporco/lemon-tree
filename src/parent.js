@@ -3,8 +3,8 @@ export default class Parent {
 	constructor(v) {
 		this.alias = {
 			id: v ? v.id : 'id',
+			pId: v ? v.pId : 'pId',
 			children: v ? v.children : 'children',
-			pId: v ? v.pId : 'pId:',
 		};
 	}
 	

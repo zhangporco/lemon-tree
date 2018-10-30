@@ -1,4 +1,5 @@
 import Parent from './parent';
+import Make from './make';
 
 /**
  * 树结构 公共函数
@@ -94,5 +95,15 @@ export default class Lemon {
 	 */
 	findTree(tree, nodeId) {
 		return new Parent(this.v).findTree(tree, nodeId);
+	}
+	
+	/**
+	 * 将数组转化成树形结构返回
+	 * @param array
+	 * @param template 结构模版
+	 * @returns {Array}
+	 */
+	arrayToTree(array, template) {
+		return new Make(template).arrayToTree(array);
 	}
 }
