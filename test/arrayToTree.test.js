@@ -14,7 +14,7 @@ const array = [
 	{ id: 10, pId: 0 },
 ];
 test('array to tree 1', t => {
-	const res = new Lemon().arrayToTree(array);
+	const res = new Lemon().makeTree(array);
 	t.is(res.length, 3);
 });
 
@@ -31,7 +31,6 @@ const array2 = [
 	{ Id: 10, pid: 0 },
 ];
 test('array to tree 2', t => {
-	const res = new Lemon().arrayToTree(array2, { id: 'Id', pId: 'pid', children: 'child' });
-	console.log(res);
+	const res = new Lemon({ id: 'Id', pId: 'pid', children: 'child' }).makeTree(array2);
 	t.is(res.length, 3);
 });

@@ -100,10 +100,9 @@ export default class Lemon {
 	/**
 	 * 将数组转化成树形结构返回
 	 * @param array
-	 * @param template 结构模版
 	 * @returns {Array}
 	 */
-	arrayToTree(array, template) {
-		return new Make(template).arrayToTree(array);
+	makeTree(array) {
+		return new Make(this.v).arrayToTree(array);
 	}
 }
