@@ -105,4 +105,13 @@ export default class Lemon {
 	makeTree(array) {
 		return new Make(this.v).arrayToTree(array);
 	}
+	
+	/**
+	 * 将树转化成对象数组返回
+	 * @param tree
+	 * @returns {*}
+	 */
+	makeArray(tree) {
+		return new Make(this.v).treeToArray(tree);
+	}
 }
