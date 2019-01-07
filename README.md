@@ -26,7 +26,8 @@ import Lemon from 'lemon-tree';
 - findParentIds(tree, nodeId) 获取全部父节点 id 数组（包括结点自身）
 - findParents(tree, nodeId) 获取全部父节点 数组（包括结点自身)
 - findTree(tree, nodeId) 获取 nodeId 所在树对象
-- makeTree(array, template) 将数组转化成树形结构返回
+- makeTree(array) 将数组转化成树形结构返回
+- makeArray(tree) 将树转化成对象数组返回
 
 ## 使用
 
