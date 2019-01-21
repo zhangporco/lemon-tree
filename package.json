@@ -1,6 +1,6 @@
 {
   "name": "lemon-tree",
-  "version": "4.2.4",
+  "version": "4.2.5",
   "description": "js tree 树 操作",
   "main": "./lib/lemon",
   "repository": "https://github.com/zhangporco/lemon-tree.git",
@@ -13,7 +13,7 @@
   },
   "ava": {
     "files": [
-      "./test/treeToArray.test.js"
+      "./test/getNodeById.test.js"
     ],
     "require": [
       "babel-register"
@@ -26,6 +26,7 @@
     "babel-core": "^6.26.3",
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2017-node7": "^0.5.2",
     "babel-preset-stage-0": "^6.24.1"
   },
