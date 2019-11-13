@@ -1,6 +1,6 @@
 {
   "name": "lemon-tree",
-  "version": "4.3.5",
+  "version": "4.3.6",
   "description": "js tree 树 操作",
   "main": "./lib/lemon",
   "typings": "types/index.d.ts",
