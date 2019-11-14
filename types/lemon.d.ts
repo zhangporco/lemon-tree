@@ -1,7 +1,7 @@
 /*
  * @Author: Porco
  * @Date: 2019-11-11 14:23:12
- * @LastEditTime: 2019-11-13 20:15:29
+ * @LastEditTime: 2019-11-14 16:49:55
  * @Description: 请填写文件注释
  */
 
@@ -12,7 +12,7 @@ export declare class LemonTree {
 
   hasNodeId(tree: object, nodeId: string): boolean;
 
-  getNodeById<T>(tree: T, nodeId: string): T;
+  getNodeById(tree: any, nodeId: string): any;
 
   findParentIds(tree: object, nodeId: string): Array<any>;
   
